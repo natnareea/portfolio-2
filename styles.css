@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600&display=swap');
+
+body,
+textarea {
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a:link,
+a:hover,
+a:active {
+    color: black;
+}
+a:visited {
+    color:dimgray;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    height: 100vh;
+}
+
+main {
+    display: grid;
+}
+
+/* ***************************** */
+/* nav styles */
+nav {
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav a:link,
+nav a:visited,
+nav a:active {
+    color: #000;
+    text-decoration: none;
+}
+nav a:hover {
+    color: grey;
+    text-decoration: underline;
+    font-weight: bold;
+} 
+#nav-left img {
+    width: 30px;
+    padding-left: 20px;
+}
+#nav-right {
+    text-align: right;
+}
+
+
+@media (max-width: 769px) {
+    nav {
+      padding: 0;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      text-align: center;
+      padding: 10px;
+      border: 1px #fff;
+      display: block;
+    }
+}
+/* ***************************** */
+/* header styles */
+header {
+    padding: 50px;
+    background-color: #fff;
+}
+h1 {
+    color: #000;
+    background-color: #fff;
+    padding: 15px 0 0 30px;
+    text-align: left;
+    margin: 10px 0 0 30px;
+    font-size: 400%;
+}
+h1 span {
+    color: #000;
+    font-family:'Comfortaa', cursive;
+    font-size: 400%;
+    padding: 10px 0 0 20px;
+}
+header h2 {
+    text-align: left;
+    font-size: 200%;
+    padding-left: 70px;
+}
+header img {
+    float: right;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+/* ***************************** */
+/* Work styles */
+#work, #work2, #work3 {
+    margin: auto;
+    justify-content: space-between;
+}
+#work-content1,
+#work-content2,
+#work-content3 {
+    text-align: center;
+}
+#work-content1 h2,
+#work-content2 h2,
+#work-content3 h3 {
+    font-weight: bold;
+}
+#work-image1,
+#work-image2,
+#work-image3 {
+    text-align: center;
+}
+
+#work-image1 img,
+#work-image2 img,
+#work-image3 img {
+    border-radius: 10px;
+}
+
+#work-content1 #button1,
+#work-content2 #button2,
+#work-content3 #button3,
+#about-profile #button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#work-content1 #button1 a:link,
+#work-content1 #button1 a:hover,
+#work-content1 #button1 a:active,
+#work-content2 #button2 a:link,
+#work-content2 #button2 a:hover,
+#work-content2 #button2 a:active,
+#work-content3 #button3 a:link,
+#work-content3 #button3 a:hover,
+#work-content3 #button3 a:active {
+    color: white;
+}
+#work-content1 #button1 a:visited,
+#work-content2 #button2 a:visited,
+#work-content3 #button3 a:visited   {
+    color:dimgray;
+}
+
+/* ***************************** */
+/* about styles */
+
+#about {
+    margin: auto;
+    color: #000;
+}
+#about-profile {
+    text-align: center;
+}
+#about-image {
+    text-align: center;
+}
+#about-image img {
+    border-radius: 30px;
+}
+#about-profile #button a:link,
+#about-profile #button a:hover,
+#about-profile #button a:active {
+    color: white;
+}
+#about-profile #button a:visited {
+    color:dimgray;
+}
+
+/* ***************************** */
+/* Contact */
+#contact-content img {
+    width: 50px;
+}
+#logo {
+    padding-top: 20px;
+}
+#form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+input {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: transparent;
+    outline: none;
+    color: #000;
+    border: solid 1px gray;
+    border-bottom: none;
+}
+textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    background: transparent;
+    outline: none;
+    color: #000;
+    font-size: 0.875em;
+    font-family: 'Comfortaa', cursive;
+    border: solid 1px gray;
+}
+#submit {
+    width: 502px;
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    font-size: 0.875em;
+    font-family: 'Comfortaa', cursive;
+    color: #fff;
+    outline:none;
+    cursor: pointer;
+    border: solid 1px gray;
+    background-color: #000;
+    border-top: none;
+  }
+
+/* ***************************** */
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: grey;
+    background-color: #fff;
+}
+
+/* ********************* */
+/* Grid Elements */
+
+.split {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.split-left {
+    flex: 50%;
+    box-sizing: border-box;
+}
+
+.split-right {
+    flex: 50%;
+    box-sizing: border-box;
+}
+.full {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.full-content {
+    flex: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
